@@ -3,12 +3,16 @@ import React from 'react';
 export default function ExplanationPanel({ question, userAnswers, isCorrect }) {
   const { 
     correctAnswers, 
-    explanationVietnamese, 
+    explanationVietnamese,
+    explanationEnglish,
     optionExplanationsVietnamese 
   } = question;
 
   const userSelectedStr = userAnswers.join(', ') || 'Chưa chọn';
   const correctStr = correctAnswers.join(', ');
+
+  // Use English explanation as fallback when Vietnamese is not available
+  const generalExplanation = explanationVietnamese || explanationEnglish || '';
 
   return (
     <div className="explanation-panel">
@@ -24,10 +28,12 @@ export default function ExplanationPanel({ question, userAnswers, isCorrect }) {
         </p>
       </div>
 
-      {explanationVietnamese && (
+      {generalExplanation && (
         <div className="general-explanation">
-          <h3 className="section-title">Giải thích chung</h3>
-          <p>{explanationVietnamese}</p>
+          <h3 className="section-title">
+            {explanationVietnamese ? 'Giải thích chung' : 'Explanation'}
+          </h3>
+          <p>{generalExplanation}</p>
         </div>
       )}
 

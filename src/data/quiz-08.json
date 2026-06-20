@@ -1,0 +1,5444 @@
+{
+  "id": "quiz-08",
+  "title": "CCNA Part 9",
+  "description": "92 questions",
+  "sourceFile": "CCNA_Part9.docx",
+  "questions": [
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.1",
+      "type": "multiple",
+      "requiredAnswerCount": 2,
+      "questionEnglish": "Refer to the exhibit. Switch#show etherchannel summary [output omitted] Group   Port-channel  Protocol   Ports -------+--------------+---------+--------------------- 10      Po10(SU)       LACP      Gi0/0(P)  Gi0/1(P) 20      Po20(SU)       LACP      Gi0/2(P)  Gi0/3(P) Which two commands when used together create port channel 10? (Choose two)",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "int range g0/0-1\nchannel-group 10 mode active",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "int range g0/0-1\nchannel-group 10 mode desirable",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "int range g0/0-1\nchannel-group 10 mode passive",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "int range g0/0-1\nchannel-group 10 mode auto",
+          "textVietnamese": ""
+        },
+        {
+          "id": "E",
+          "textEnglish": "int range g0/0-1\nchannel-group 10 mode on",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "C"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "E": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 615
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.3",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Which field within the access-request packet is encrypted by RADIUS?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "authorized services",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "authenticator",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "username",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "password",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "RADIUS encrypts only the password in the access-request packet, from the client to the server. The remainder of the packet is unencrypted. Other information, such as username, authorized services, and accounting, can be captured by a third party.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [
+        "https://www.cisco.com/c/en/us/support/docs/security-vpn/remote-authentication-dial-user-service-radius/13838-10.html"
+      ],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 616
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.4",
+      "type": "multiple",
+      "requiredAnswerCount": 2,
+      "questionEnglish": "Refer to the exhibit. Which two configurations must the engineer apply on this network so that R1 becomes the DR? (Choose two)",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "R1(config)#interface fastethernet0/0\nR1(config-if)#ip ospf priority 200",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "R1(config)#router ospf 1\nR1(config-router)#router-id 192.168.100.1",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "R3(config)#interface fastethernet0/0\nR3(config-if)#ip ospf priority 0",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "R1(config)#interface fastethernet0/0\nR1(config-if)#ip ospf priority 0",
+          "textVietnamese": ""
+        },
+        {
+          "id": "E",
+          "textEnglish": "R3(config)#interface fastethernet0/0\nR3(config-if)#ip ospf priority 200",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "C"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "E": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 617
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.5",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. The router has been configured with a supernet to accommodate the requirement for 380 users on a subnet. The requirement already considers 30% future growth. Which configuration verifies the IP subnet on router R4?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "Subnet: 10.7.54.0\nSubnet mask: 255.255.254.0\nBroadcast address: 10.7.54.255\nUsable IP address range: 10.7.54.1 – 10.7.55.254",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "Subnet: 10.7.54.0\nSubnet mask: 255.255.254.0\nBroadcast address: 10.7.55.255\nUsable IP address range: 10.7.54.1 – 10.7.55.254",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "Subnet: 10.7.54.0\nSubnet mask: 255.255.128.0\nBroadcast address: 10.7.55.255\nUsable IP address range: 10.7.54.1 – 10.7.55.254",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "Subnet: 10.7.54.0\nSubnet mask: 255.255.255.0\nBroadcast address: 10.7.54.255\nUsable IP address range: 10.7.54.1 – 10.7.55.254",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "380 users in a subnet < 512 = 29. Therefore we need 9 bits 0 in the subnet mask -> 255.255.254.0. The increment is 2 (in the third octet) so the broadcast address is 10.7.55.255.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 618
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.6",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "What is a function of a Next-Generation IPS?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "makes forwarding decisions based on learned MAC addresses",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "serves as a controller within a controller-based network",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "integrates with a RADIUS server to enforce Layer 2 device authentication rules",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "correlates user activity with network events",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 619
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.8",
+      "type": "multiple",
+      "requiredAnswerCount": 2,
+      "questionEnglish": "Refer to the exhibit. Which two commands must be added to update the configuration of router R1 so that it accepts only encrypted connections? (Choose two)",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "username CNAC secret R!41!4319115@",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "crypto key generate rsa 1024",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "ip ssh version 2",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "line vty 0 4",
+          "textVietnamese": ""
+        },
+        {
+          "id": "E",
+          "textEnglish": "transport input ssh",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "B",
+        "E"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "“Encrypted connections” here imply SSH, not Telnet so this question wants to ask to only accept SSH connections. From the output of “show crypto key mypubkey rsa” command, we learn that current there is no RSA key generated so answer B is surely correct. This command is necessary to generate the RSA key. Although this answer is missing the “modulus” keyword (the full command should be “crypto key generate rsa modulus 1024″) but maybe it is just a typo. Although answer A is also necessary but we are not sure if any username has been configured or not so it is not totally correct.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "E": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 620
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.9",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Which action is taken by the data plane within a network device?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "looks up an egress interface in the forwarding information base",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "constructs a routing table based on a routing protocol",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "provides CLI access to the network device",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "forwards traffic to the next hop",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 621
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.10",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "R1 as an NTP server must have:\n* NTP authentication enabled\n* NTP packets sourced from Interface loopback 0\n* NTP stratum 2\n* NTP packets only permitted to client IP 209.165.200.225 How should R1 be configured?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "Option A",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "Option B",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "Option C",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "Option D",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "To configure a Cisco device as an Authoritative NTP Server, use the ntp master [stratum] command -> Only Option A and Option D are correct.\nACL 10 is a standard ACL so we cannot configure protocol (UDP in this case) for the ACL. We can only configure source IP address -> Option D is correct.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 622
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.11",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. Which route must be configured on R1 so that OSPF routing is used when OSPF is up. But the server is still reachable when OSPF goes down?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "ip route 10.1.1.10 255.255.255.255 172.16.2.2 100",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "ip route 10.1.1.0 255.255.255.0 gi0/1 125",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "ip route 10.1.1.0 255.255.255.0 172.16.2.2 100",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "ip route 10.1.1.10 255.255.255.255 gi0/0 125",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 623
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.12",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "How does Rapid PVST+ create a fast loop-free network topology?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "It requires multiple links between core switches",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "It maps multiple VLANs into the same spanning-tree instance",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "It generates one spanning-tree instance for each VLAN",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "It uses multiple active paths between end stations",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 624
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.13",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Which WLC management connection type is vulnerable to man-in-the-middle attacks?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "SSH",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "HTTPS",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "Telnet",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "console",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "As you know, telnet is insecure. By default, telnet is disabled on Cisco WLCs. So, if you want to use telnet, you must enable it.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 625
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.14",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. Which command configures OSPF on the point-to-point link between routers R1 and R2?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "network 10.0.0.0 0.0.0.255 area 0",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "neighbor 10.1.2.0 cost 180",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "ip ospf priority 100",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "router-id 10.0.0.15",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 626
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.15",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Which characteristic differentiates the concept of authentication from authorization and accounting?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "user-activity logging",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "service limitations",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "consumption-based billing",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "identity verification",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 627
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.17",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. Traffic that is flowing over interface TenGigabitEthernet0/0 experiences slow transfer speeds. What is the reason for the issue?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "heavy traffic congestion",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "queuing drops",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "a speed conflict",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "a duplex incompatibility",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "We see the collisions are very high compared to the packets output. The is usually the result of duplex mismatch (one is half-duplex, one end is full-duplex for example)",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 628
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.18",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Which type of network attack overwhelms the target server by sending multiple packets to a port until the half-open TCP resources of the target are exhausted?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "SYN flood",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "reflection",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "teardrop",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "amplification",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "A SYN flood (half-open attack) is a type of denial-of-service (DDoS) attack which aims to make a server unavailable to legitimate traffic by consuming all available server resources. By repeatedly sending initial connection request (SYN) packets, the attacker is able to overwhelm all available ports on a targeted server machine, causing the targeted device to respond to legitimate traffic sluggishly or not at all.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 629
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.19",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Which interface mode must be configured to connect the lightweight APs in a centralized architecture?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "WLAN dynamic",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "management",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "trunk",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "access",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 630
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.20",
+      "type": "multiple",
+      "requiredAnswerCount": 2,
+      "questionEnglish": "Which two network actions occur within the data plane? (Choose two)",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "Add or remove an 802.1Q trunking header.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "Make a configuration change from an incoming NETCONF RPC.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "Run routing protocols.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "Reply to an incoming ICMP echo request.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "E",
+          "textEnglish": "Match the destination MAC address to the MAC address table.",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "E"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "For perspective, the following list details some of the more common actions that a networking device does that fit into the data plane:\n+ De-encapsulating and re-encapsulating a packet in a data-link frame (routers, Layer 3 switches)\n+ Adding or removing an 802.1Q trunking header (routers and switches)\n+ Matching an Ethernet frame’s destination Media Access Control (MAC) address to the MAC address table (Layer 2 switches)\n+ Matching an IP packet’s destination IP address to the IP routing table (routers, Layer 3 switches)\n+ Encrypting the data and adding a new IP header (for virtual private network [VPN] processing)\n+ Changing the source or destination IP address (for Network Address Translation [NAT] processing)\n+ Discarding a message due to a filter (access control lists [ACLs], port security)",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "E": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [
+        "https://www.ciscopress.com/articles/article.asp?p=2995354&seqNum=2"
+      ],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 631
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.21",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. A#show ip ospf neighbor Neighbor ID  Pri   State       Dead Time   Address       Interface 172.1.1.1    1     EXCHANGE/-  00:00:36    172.16.32.1   Serial0.1 An engineer assumes a configuration task from a peer. Router A must establish an OSPF neighbor relationship with neighbor 172.1.1.1. The output displays the status of the adjacency after 2 hours. What is the next step in the configuration process for the routers to establish an adjacency?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "Set the router B OSPF ID to the same value as its IP address",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "Set the router B OSPF ID to a nonhost address",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "Configure a point-to-point link between router A and router B",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "Configure router A to use the same MTU size as router B",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "The problem occurs most frequently when attempting to run OSPF between a Cisco router and another vendor’s router. The problem occurs when the maximum transmission unit (MTU) settings for neighboring router interfaces don’t match.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [
+        "https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/13684-12.html"
+      ],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 632
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.22",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. CPE#show ip route 192.168.1.0/24 is variably subnetted, 3 subnets, 3 masks B    192.168.1.0/24 [20/1] via 192.168.12.2, 00:00:06 R    192.168.1.128/25 [120/5] via 192.168.13.3, 00:02:22, Ethernet0/1 O    192.168.1.192/26 [110/11] via 192.168.14.4, 00:02:22, Ethernet0/2 D    192.168.1.224/27 [90/1024640] via 192.168.15.5, 00:01:33, Ethernet0/3 All traffic enters the CPE router from interface Serial0/3 with an IP address of 192.168.50.1. Web traffic from the WAN is destined for a LAN network where servers are load-balanced. An IP packet with a destination address of the HTTP virtual IP of 192.168.1.250 must be forwarded. Which routing table entry does the router use?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "192.168.1.0/24 via 192.168.12.2",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "192.168.1.128/25 via 192.168.13.3",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "192.168.1.192/26 via 192.168.14.4",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "192.168.1.224/27 via 192.168.15.5",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 633
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.23",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. The link between PC1 and the switch is up, but it is performing poorly. Which interface condition is causing the performance problem?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "There is a duplex mismatch on the interface",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "There is an issue with the fiber on the switch interface",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "There is a speed mismatch on the interface",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "There is an interface type mismatch",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 634
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.26",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. An engineer is configuring a new router on the network and applied this configuration. Which additional configuration allows the PC to obtain its IP address from a DHCP server?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "Configure the ip dhcp relay information command under interface Gi0/1",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "Configure the ip dhcp smart-relay command globally on the router",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "Configure the ip helper-address 172.16.2.2 command under interface Gi0/0",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "Configure the ip address dhcp command under interface Gi0/0",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 635
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.27",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. A static route must be configured on R14 to forward traffic for the 172.21.34.0/25 network that resides on R86. Which command must be used to fulfill the request?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "ip route 172.21.34.0 255.255.255.192 10.73.65.65",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "ip route 172.21.34.0 255.255.255.0 10.73.65.65",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "ip route 172.21.34.0 255.255.128.0 10.73.65.64",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "ip route 172.21.34.0 255.255.255.128 10.73.65.66",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 636
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.28",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "What is a function of Opportunistic Wireless Encryption in an environment?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "offer compression",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "increase security by using a WEP connection",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "provide authentication",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "protect traffic on open networks",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "Opportunistic Wireless Encryption (OWE) is an extension to IEEE 802.11 that provides encryption of the wireless medium. The purpose of OWE based authentication is avoid open unsecured wireless connectivity between the AP’s and clients. The OWE uses the Diffie-Hellman algorithms based Cryptography to setup the wireless encryption.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [
+        "https://www.cisco.com/c/en/us/td/docs/wireless/controller/9800/16-12/config-guide/b_wl_16_12_cg/wpa3.html"
+      ],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 637
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.29",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. A company is configuring a failover plan and must implement the default routes in such a way that a floating static route will assume traffic forwarding when the primary link goes down. Which primary route configuration must be used?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "ip route 0.0.0.0 0.0.0.0 192.168.0.2 GigabitEthernet1/0",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "ip route 0.0.0.0 0.0.0.0 192.168.0.2 tracked",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "ip route 0.0.0.0 0.0.0.0 192.168.0.2 floating",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "ip route 0.0.0.0 0.0.0.0 192.168.0.2",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 638
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.30",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Which action implements physical access control as part of the security program of an organization?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "setting up IP cameras to monitor key infrastructure",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "backing up syslogs at a remote location",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "configuring enable passwords on network devices",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "configuring a password for the console port",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "Physical access control can take a number of forms, but the basic idea is to create barriers to prevent unauthorized people from entering a physical space. Also “camera” is also listed as a physical access control in this Cisco link: https://www.cisco.com/c/dam/global/hr_hr/assets/images/Cisco_rjesenja_za_zastitu_objekata_i_imovine_-_Alper_Erdal.pdf",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 639
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.31",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. An engineer is asked to insert the new VLAN into the existing trunk without modifying anything previously configured Which command accomplishes this task?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "switchport trunk allowed vlan 100-104",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "switchport trunk allowed vlan all",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "switchport trunk allowed vlan add 104",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "switchport trunk allowed vlan 104",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 640
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.32",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. What is a reason for poor performance on the network interface?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "The interface is receiving excessive broadcast traffic.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "The cable connection between the two devices is faulty.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "The interface is operating at a different speed than the connected device.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "The bandwidth setting of the interface is misconfigured",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "A working interface (in an up/up state) can still suffer from issues related to the physical cabling as well. The cabling problems might not be bad enough to cause a complete failure, but the transmission failures result in some frames failing to pass successfully over the cable. For example, excessive interference on the cable can cause the various input error counters to keep growing larger, especially the CRC counter. In particular, if the CRC errors grow, but the collisions counters do not, the problem might simply be interference on the cable. (The switch counts each collided frame as one form of input error as well.) In this question, only the input errors and CRC errors grow -> “The cable connected between two devices is faulty” is the best choice. Note: One problem, called late collisions, points to the classic duplex mismatch problem. But there is no late collision errors so duplex mismatch is not an in this question.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 641
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.33",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. Routers R1 and R3 have the default configuration. The router R2 priority is set to 99. Which commands on R3 configure it as the DR in the 10.0.4.0/24 network?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "R3(config)#interface Gig0/1\nR3(config-if)#ip ospf priority 100",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "R3(config)#interface Gig0/0\nR3(config-if)#ip ospf priority 100",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "R3(config)#interface Gig0/0\nR3(config-if)#ip ospf priority 1",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "R3(config)#interface Gig0/1\nR3(config-if)#ip ospf priority 0",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 642
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.34",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Which QoS per-hop behavior changes the value of the ToS field in the IPv4 packet header?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "shaping",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "marking",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "policing",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "classification",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 643
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.35",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. Router1#show ip route Gateway of last resort is 10.10.11.2 to network 0.0.0.0 209.165.200.0/27 is subnetted, 1 subnets B     209.165.200.224 [20/0] via 10.10.12.2,03:32:14 209.165.201.0/27 is subnetted, 1 subnets B     209.165.201.0 [20/0] via 10.10.12.2,02:26:53 209.165.202.0/27 is subnetted, 1 subnets B     209.165.202.128 [20/0] via 10.10.12.2,02:46:03 10.0.0.0/8 is variably subnetted, 10 subnets, 4 masks O     10.10.13.0/25 [110/2] via 10.10.10.1,00:00:04, GigabitEthernet0/0 O     10.10.13.128/28 [110/2] via 10.10.10.5,00:00:12, GigabitEthernet0/1 O     10.10.13.144/28 [110/2] via 10.10.10.9,00:01:57, GigabitEthernet0/2 O     10.10.13.160/29 [110/2] via 10.10.10.5,00:00:12, GigabitEthernet0/1 O     10.10.13.208/29 [110/2] via 10.10.10.13,00:01:57, GigabitEthernet0/3 S*  0.0.0.0/0 [1/0] via 10.10.11.2 Which next-hop IP address does Router1 use for packets destined to host 10.10.13.158?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "10.10.10.5",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "10.10.11.2",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "10.10.12.2",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "10.10.10.9",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "10.10.13.158 belongs to prefix 10.10.13.144/28 so the next-hop 10.10.10.9 will be chosen to forward packet for this destination.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 644
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.36",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "What is one reason to implement LAG on a Cisco WLC?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "to increase security and encrypt management frames",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "to provide link redundancy and load balancing",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "to allow for stateful and link-state failover",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "to enable connected switch ports to failover and use different VLANs",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 645
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.37",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. Web traffic is coming in from the WAN interface. Which route takes precedence when the router is processing traffic destined for the LAN network at 10.0.10.0/24?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "via next-hop 10.0.1.5",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "via next-hop 10.0.1.4",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "via next-hop 10.0.1.50",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "via next-hop 10.0.1.100",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 646
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.38",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Which PoE mode enables powered-device detection and guarantees power when the device is detected?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "dynamic",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "static",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "active",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "auto",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "static—Enables powered-device detection. Pre-allocate (reserve) power for a port before the switch discovers the powered device. The switch reserves power for this port even when no device is connected and guarantees that power will be provided upon device detection. Note: “auto” – Enables powered-device detection; if enough power is available, automatically allocates power to the PoE port after device detection (default setting).” The answer “auto” is not correct as “auto” only allocates power “if enough power is available”.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [
+        "https://www.cisco.com/en/US/docs/switches/lan/catalyst3850/software/release/3.2_0_se/multibook/configuration_guide/b_consolidated_config_guide_3850_chapter_011010.html"
+      ],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 647
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.39",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "A Cisco engineer must configure a single switch interface to meet these requirements\n* accept untagged frames and place them in VLAN 20\n* accept tagged frames in VLAN 30 when CDP detects a Cisco IP phone Which command set must the engineer apply?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "switchport mode access\nswitchport access vlan 20\nswitchport voice vlan 30",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "switchport mode trunk\nswitchport access vlan 20\nswitchport voice vlan 30",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "switchport mode dynamic auto\nswitchport trunk native vlan 20\nswitchport trunk allowed vlan 30\nswitchport voice vlan 30",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "switchport mode dynamic desirable\nswitchport access vlan 20\nswitchport trunk allowed vlan 30\nswitchport voice vlan 30",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "With the configuration in answer: “switchport mode access\nswitchport access vlan 20 \nswitchport voice vlan 30″ This configuration is typically used when connecting a Cisco IP phone and a PC to the same switch port. + The PC sends untagged traffic -> assigned to VLAN 20.\n+ The IP Phone sends 802.1Q-tagged voice traffic -> placed in VLAN 30.\n+ CDP helps the switch identify the IP phone and treat its traffic appropriately. Note: + Trunks are used between switches or for special cases, not typical for connecting end devices like phones and PCs simultaneously -> Other answers with “trunk” mode are not correct.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 648
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.40",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. Which minimum configuration items are needed to enable Secure Shell version 2 access to R15?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "Router(config)#hostname R15\nR15(config)#crypto key generate rsa general-keys modulus 1024\nR15(config-line)#line vty 0 15\nR15(config-line)# transport input ssh\nR15(config)#ip ssh source-interface Fa0/0\nR15(config)#ip ssh stricthostkeycheck",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "Router(config)#ip domain-name cisco.com\nRouter(config)#crypto key generate rsa general-keys modulus 1024\nRouter(config)#ip ssh version 2\nRouter(config-line)#line vty 0 15\nRouter(config-line)# transport input all\nRouter(config)#ip ssh logging events",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "Router(config)#hostname R15\nR15(config)#ip domain-name cisco.com\nR15(config)#crypto key generate rsa general-keys modulus 1024\nR15(config)#ip ssh version 2\nR15(config-line)#line vty 0 15\nR15(config-line)# transport input ssh",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "Router(config)#crypto key generate rsa general-keys modulus 1024\nRouter(config)#ip ssh version 2\nRouter(config-line)#line vty 0 15\nRouter(config-line)# transport input ssh\nRouter(config)#ip ssh logging events\nR15(config)#ip ssh stricthostkeycheck",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "Steps to configure SSH:\n1. Configure the router hostname using command “hostname”.\n2. Configure the domain name using command “ip domain-name”.\n3. Generate public and private keys using command “crypto key generate rsa”.\n4. Create a user in the local database using command “username…secret”.\n5. Allow only SSH access on VTY lines using command “transport input ssh”.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [
+        "https://ipwithease.com/how-to-configure-ssh-version-2-on-cisco-router/"
+      ],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 649
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.41",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. Users need to connect to the wireless network with IEEE 802.11r-compatible devices. The connection must be maintained as users travel between floors or to other areas in the building. What must be the configuration of the connection?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "Select the WPA Policy option with the CCKM option",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "Disable AES encryption",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "Enable Fast Transition and select the FT 802.1x option",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "Enable Fast Transition and select the FT PSK option",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "802.11r, which is the IEEE standard for fast roaming, introduces a new concept of roaming where the initial handshake with the new AP is done even before the client roams to the target AP, which is called Fast Transition (FT). The initial handshake allows the client and APs to do the Pairwise Transient Key (PTK) calculation in advance. These PTK keys are applied to the client and AP after the client does the reassociation request or response exchange with new target AP. FT works with both preshared key (PSK) and 802.1X authentication methods. If you check the FT PSK check box, from the PSK Format drop-down list, choose ASCII or Hex and enter the key value -> This question does not mention about “enter the key value” so maybe answer C is the best choice.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [
+        "https://www.cisco.com/c/dam/en/us/td/docs/wireless/controller/technotes/80211r-ft/b-80211r-dg.html"
+      ],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 650
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.42",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. An engineer is configuring an EtherChannel using LACP between Switches 1 and 2. Which configuration must be applied so that only Switch 1 sends LACP initiation packets?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "Switch1(config-if)#channel-group 1 mode on\nSwitch2(config-if)#channel-group 1 mode passive",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "Switch1(config-if)#channel-group 1 mode passive\nSwitch2(config-if)#channel-group 1 mode active",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "Switch1(config-if)#channel-group 1 mode active\nSwitch2(config-if)#channel-group 1 mode passive",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "Switch1(config-if)#channel-group 1 mode on\nSwitch2(config-if)#channel-group 1 mode active",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 651
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.43",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. Which switch becomes the root of a spanning tree for VLAN 20 if all links are of equal speed?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "SW1",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "SW2",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "SW3",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "SW4",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 652
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.44",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. Users on existing VLAN 100 can reach sites on the Internet. Which action must the administrator take to establish connectivity to the Internet for users in VLAN 200?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "Define a NAT pool on the router.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "Update the NAT_INSIDE_RANGES ACL",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "Configure the ip nat outside command on another interface for VLAN 200",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "Configure static NAT translations for VLAN 200",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "We need to add the “permit 10.10.20.0 0.0.0.255” command to the ACL.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 653
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.45",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Which protocol uses the SSL?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "HTTP",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "HTTPS",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "SSH",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "Telnet",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 654
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.47",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Which value is the unique identifier that an access point uses to establish and maintain wireless connectivity to wireless network devices?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "VLANID",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "SSID",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "RFID",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "WLANID",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "The SSID is a unique identifier that wireless networking devices use to establish and maintain wireless connectivity. Multiple access points on a network or subnetwork can use the same SSIDs. SSIDs are case sensitive and can contain up to 32 alphanumeric characters.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 655
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.48",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "A network engineer is configuring a switch so that it is remotely reachable via SSH. The engineer has already configured the host name on the router. Which additional command must the engineer configure before entering the command to generate the RSA key?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "password password",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "crypto key generate rsa modulus 1024",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "ip domain-name domain",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "ip ssh authentication-retries 2",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "The command “crypto key generate rsa modulus 1024” is used to generate the RSA key but this question asks about the command which is typed before entering the command to generate the RSA key so answer C is the best choice.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 656
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.49",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. Switch A is newly configured. All VLANs are present in the VLAN database. The IP phone and PC A on Gi0/1 must be configured for the appropriate VLANs to establish connectivity between the PCs. Which command set fulfills the requirement?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "SwitchA(config-if)#switchport mode access\nSwitchA(config-if)#switchport access vlan 50\nSwitchA(config-if)#switchport voice vlan 51",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "SwitchA(config-if)#switchport mode access\nSwitchA(config-if)#switchport access vlan 50\nSwitchA(config-if)#switchport voice vlan untagged",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "SwitchA(config-if)#switchport mode trunk\nSwitchA(config-if)#switchport trunk allowed vlan add 50, 51\nSwitchA(config-if)#switchport voice vlan dot1p",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "SwitchA(config-if)#switchport mode trunk\nSwitchA(config-if)#switchport trunk allowed vlan 50, 51\nSwitchA(config-if)#switchport qos trust cos",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 657
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.50",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Which QoS traffic handling technique retains excess packets in a queue and reschedules these packets for later transmission when the configured maximum bandwidth has been surpassed?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "traffic shaping",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "traffic policing",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "weighted random early detection",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "traffic prioritization",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "+ Shaping: retains excess packets in a queue and then schedules the excess for later transmission over increments of time. When traffic reaches the maximum configured rate, additional packets are queued instead of being dropped to proceed later. Traffic shaping is applicable only on outbound interfaces as buffering and queuing happens only on outbound interfaces. Shaping is configured in bits per second.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 658
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.51",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. R1 learns all routes via OSPF. Which command configures a backup static route on R1 to reach the 192.168.20.0/24 network via R3?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "R1(config)#ip route 192.168.20.0 255.255.255.0 192.168.30.2 111",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "R1(config)#ip route 192.168.20.0 255.255.255.0 192.168.30.2 90",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "R1(config)#ip route 192.168.20.0 255.255.0.0 192.168.30.2",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "R1(config)#ip route 192.168.20.0 255.255.255.0 192.168.30.2",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 659
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.52",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Which Layer 2 switch function encapsulates packets for different VLANs so that the packets traverse the same port and maintain traffic separation between the VLANs?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "VLAN numbering",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "VLAN DSCP",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "VLAN tagging",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "VLAN marking",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "VLAN tagging is a method through which more than one VLAN is handled on a port. VLAN tagging is used to tell which packet belongs to which VLAN on the other side. To make recognition easier, a packet is tagged with a VLAN tag in the Ethernet frame.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 660
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.53",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "What is an expected outcome when network management automation is deployed?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "A distributed management plane must be used.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "Software upgrades are performed from a central controller",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "Complexity increases when new device configurations are added",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "Custom applications are needed to configure network devices",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 661
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.54",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. The primary route across Gi0/0 is configured on both routers. A secondary route must be configured to establish connectivity between the workstation networks. Which command set must be configured to complete this task? R2\nip route 172.16.1.0 255.255.255.0 172.16.0.1 114 R2\nip route 172.16.1.0 255.255.255.0 172.16.0.6 89 R2\nip route 172.16.1.0 255.255.255.0 172.16.0.6 110 R2\nip route 172.16.1.0 255.255.255.0 172.16.0.5 112",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "R1\nip route 172.16.2.0 255.255.255.240 172.16.0.2 113",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "R1\nip route 172.16.2.0 255.255.255.240 172.16.0.5 89",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "R1\nip route 172.16.2.0 255.255.255.248 172.16.0.5 110",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "R1\nip route 172.16.2.0 255.255.255.224 172.16.0.6 111",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 662
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.55",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. Which action must be taken so that neighboring devices rapidly discover switch Cat9300?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "Enable portfast on the ports that connect to neighboring devices",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "Configure the cdp holdtime 10 command on switch Cat9300",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "Configure the cdp timer 10 command on the neighbors of switch Cat9300",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "Configure the cdp timer 10 command on switch Cat9300",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "The “cdp timer seconds” command sets the transmission frequency of CDP updates in seconds so we should reduce it so that CDP updates are sent more often.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 663
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.56",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. SW2 is replaced due to a hardware failure. A network engineer starts to configure SW2 by copying the Fa0/1 interface configuration from SW1. Which command must be configured on the Fa0/1 interface of SW2 to enable PC1 to connect to PC2?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "switchport mode trunk",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "switchport trunk native vlan 10",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "switchport trunk allowed remove 10",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "switchport mode access",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 664
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.57",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "How do UTP and STP cables compare?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "STP cables are cheaper to produre and easier to install and UTP cables are more expensive and harder to install.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "UTP cables are less prone to crosstalk and interference and STP cables are more prone to crosstalk and interference.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "UTP cables provide faster and more reliable data transfer rates and STP cables are slower and less reliable.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "STP cables are shielded and protect against electromagnetic interference and UTP lacks the same protection against electromagnetic interference.",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "UTP (Unshielded twisted pair) and STP (Shielded twisted pair) are the types of twisted pair cables which act as a transmission medium and imparts reliable connectivity of electronic equipment. Although the design and manufacture are different but both serve the same purpose.\nThe basic difference between UTP and STP is UTP (Unshielded twisted pair) is a cable with wires that are twisted together to reduce noise and crosstalk. On the contrary, STP (Shielded twisted pair) is a twisted pair cable confined in foil or mesh shield that guards the cable against electromagnetic interference.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 665
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.59",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Which port type does a lightweight AP use to connect to the wired network when configured in FlexConnect mode with local switching and VLAN tagging?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "EtherChannel",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "access",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "LAG",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "trunk",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "Local Switched: Locally-switched WLAN’s (the SSID you are connected to) will map their wireless user traffic to a VLAN via 802.1Q trunking to a local switch adjacent to the access point.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [
+        "https://wlanlessonslearned.wordpress.com/tag/flexconnect/"
+      ],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 666
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.60",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "An engineer is installing a new wireless printer with a static IP address on the Wi-Fi network. Which feature must be enabled and configured to prevent connection issues with the printer?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "passive client",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "static IP tunneling",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "DHCP address assignment",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "client exclusion",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "Passive clients are wireless devices, such as scales and printers that are configured with a static IP address. These clients do not transmit any IP information such as IP address, subnet mask, and gateway information when they associate with an access point. As a result, when passive clients are used, the controller never knows the IP address unless they use the DHCP. Since the wireless controller does not have any IP related information about passive clients, it cannot respond to any ARP requests. The current behavior does not allow the transfer of ARP requests to passive clients. Any application that tries to access a passive client will fail. The passive client feature enables the ARP requests and responses to be exchanged between wired and wireless clients. This feature when enabled, allows the controller to pass ARP requests from wired to wireless clients until the desired wireless client gets to the RUN state.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [
+        "https://www.cisco.com/c/en/us/td/docs/wireless/controller/7-6/configuration-guide/b_cg76/b_cg76_chapter_01100000.pdf"
+      ],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 667
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.62",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. What must be configured to enable 802.11w on the WLAN?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "Set PMF to Required",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "Enable MAC Filtering",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "Enable WPA Policy",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "Set Fast Transition to Enabled",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "Configuring 802.11w (GUI)\nProcedure\nStep 1 Choose WLANs > WLAN ID to open the WLANs > Edit page.\nStep 2 In the Security tab, choose the Layer 2 security tab.\nStep 3 From the Layer 2 Security drop-down list, choose WPA+WPA2.\nThe 802.11w IGTK Key is derived using the 4-way handshake, which means that it can only be used on WLANs that are configured for WPA2 security at Layer 2.\nNote: WPA2 is mandatory and encryption type must be AES. TKIP is not valid.\nStep 4 Choose the PMF state from the drop-down list\nThe following options are available:\nDisabled—Disables 802.11w MFP protection on a WLAN\nOptional—To be used if the client supports 802.11w.\nRequired—Ensures that the clients that do not support 802.11w cannot associate with the WLAN. Note: When you create a MAC address filter on WLCs, users are granted or denied access to the WLAN network based on the MAC address of the client they use Fast Transition is 802.11r, not 802.11w. Therefore “Set PMF to Required” is the best choice.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [
+        "https://content.cisco.com/chapter.sjs?uri=/searchable/chapter/content/en/us/td/docs/wireless/controller/7-5/configuration-guide/b_cg75/b_cg75_chapter_01001100.html.xml"
+      ],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 668
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.65",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. Which configuration establishes a Layer 2 LACP EtherChannel when applied to both switches?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "interface range G1/1 -1/3\nswitchport mode access\nchannel-group 1 mode passive\nno shutdown",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "interface range G1/1 -1/3\nswitchport mode trunk\nchannel-group 1 mode desirable\nno shutdown",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "interface range G1/1 -1/3\nswitchport mode trunk\nchannel-group 1 mode active\nno shutdown",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "interface range G1/1 -1/3\nswitchport mode access\nchannel-group 1 mode on\nno shutdown",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "The question clear stated that we use LACP so we must use mode “active” on both interfaces.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 669
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.66",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. A network engineer configures the Cisco WLC to authenticate local wireless clients against a RADIUS server. Which task must be performed to complete the process?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "Disable the Server Status option",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "Enable the Management option",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "Enable the Network User option",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "Enable the Support for CoA option",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "If you are configuring a RADIUS authentication server, check the Management check box to enable management authentication (authenticate users who login to the the WLC). If you enable this feature, this entry is considered the RADIUS authentication server for management users, and authentication requests go to the RADIUS server. The Network User check box to enable network user authentication. So the best answer here should be enable “Network User” as it also authenticates local users. Note: \n+ Support for CoA (change of authorization) is an extension to the RADIUS protocol that allows dynamic changes to a user session.\n+ The Server Status checkbox is used to enable/disable this RADIUS server.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [
+        "https://www.cisco.com/c/en/us/td/docs/wireless/controller/8-5/config-guide/b_cg85/aaa_administration.html"
+      ],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 670
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.67",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Which QoS queuing method discards or marks packets that exceed the desired bit rate of traffic flow?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "shaping",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "policing",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "CBWFQ",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "LLQ",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "Policing: is used to control the rate of traffic flowing across an interface. During a bandwidth exceed (crossed the maximum configured rate), the excess traffic is generally dropped or remarked.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 671
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.68",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "What is the role of disaggregation in controller-based networking?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "It divides the control-plane and data-plane functions.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "It summarizes the routes between the core and distribution layers of the network topology.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "It enables a network topology to quickly adjust from a ring network to a star network",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "It streamlines traffic handling by assigning individual devices to perform either Layer 2 or Layer 3 functions.",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "Taken literally, “network disaggregation” means to separate the network into its component parts.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 672
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.69",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Which REST method updates an object in the Cisco DNA Center Intent API?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "CHANGE",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "UPDATE",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "POST",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "PUT",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "The RESTful Cisco DNA Center Intent API uses HTTPS verbs (GET, POST, PUT, and DELETE) with JSON structures to discover and control the network.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [
+        "https://developer.cisco.com/docs/dna-center/#!cisco-dna-center-platform-overview/intent-api-northbound"
+      ],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 673
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.71",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "What is the function of Cisco Advanced Malware protection for next-generation IPS?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "authorizing potentially compromised wireless traffic",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "URL filtering",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "authenticating end users",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "inspecting specific files and files types for malware",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 674
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.72",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "An administrator must use the password complexity not manufacturer-name command to prevent users from adding “cisco” as a password. Which command must be issued before this command?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "Password complexity enable",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "confreg 0x2142",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "login authentication my-auth-list",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "service password-encryption",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "Step 3. (Optional) To enable the password complexity settings on the switch, enter the following:\nSG350X(config)#passwords complexity enable\nReference: https://www.cisco.com/c/en/us/support/docs/smb/switches/cisco-small-business-300-series-managed-switches/smb5563-configure-password-settings-on-a-switch-through-the-command.html",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 675
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.73",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "What is the function of “off-the-shelf” switches in a controller-based network?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "Forwarding packets",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "Making routing decision",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "Providing a central view of the deployed network",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "Setting packet-handling policies",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "In SDN’s purest form, the controller has all the intelligence: Switches are dumb, commercial off-the-shelf (COTS) devices that are managed by the controllers. Therefore we can deduce “off-the-shelf” switches are only used to forward packets.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 676
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.74",
+      "type": "multiple",
+      "requiredAnswerCount": 2,
+      "questionEnglish": "Which two practices are recommended for an acceptable security posture in a network? (Choose two)",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "Maintain network equipment in a secure location",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "Backup device configurations to encrypted USB drives for secure retrieval",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "Use a cryptographic keychain to authenticate to network devices",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "Place internal email and file servers in a designated DMZ",
+          "textVietnamese": ""
+        },
+        {
+          "id": "E",
+          "textEnglish": "Disable unused or unnecessary ports, interfaces and services",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "E"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "E": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 677
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.75",
+      "type": "multiple",
+      "requiredAnswerCount": 2,
+      "questionEnglish": "Refer to the exhibit. What are the two steps an engineer must take to provide the highest encryption and authentication using domain credentials from LDAP? (Choose two)",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "Select WPA policy with TKIP Encryption",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "Select WPA + WPA2 on layer 2 security",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "Select PSK under authentication key management",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "Select Static-WEP + 802.1x on Layer 2 security",
+          "textVietnamese": ""
+        },
+        {
+          "id": "E",
+          "textEnglish": "Select 802.1x from under authentication key management",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "B",
+        "E"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "E": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 678
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.76",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. Cat9K-1#show lldp entry Cat9K-2 Local Intf: Gi1/0/21 Chassis ID: 308b.b2b3.2880 Port id: Gi1/0/21 Port Description: GigabitEthernet1/0/21 System Name: Cat9K-2 Management Addresses: IP: 10.6.110.2 The network administrator must prevent the switch Cat9K-2 IP address from being visible in LLDP without disabling the protocol. Which action must be taken must be taken to complete the task?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "Configure the no lldp tlv-select-management-address command globally on Cat9K-2",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "Configure the no lldp transmit command on interface G1/0/21 in Cat9K-1",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "Configure the no lldp receive command on interface G1/0/21 on Cat9K-1",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "Configure the no lldp mac-phy-cfg command globally on Cat9K-2",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "LLDP stands for Link Layer Discovery Protocol and runs over data link layer. It is used for network devices to send information about themselves to other directly connected devices on the network. By using LLDP, two devices running different network layer protocols can learn information about each other. A set of attributes are used to discover neighbor devices. These attributes contains type, length, and value descriptions and are referred to TLVs. Details such as port description, system name, system description, system capabilities, and management address can be sent and received on this Managed Switch. The command no lldp tlv-select-management-address disables the Management Address attribute to be sent.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 679
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.77",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Which WAN topology has the highest degree of reliability?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "router-on-a-stick",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "Point-to-point",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "hub-and-spoke",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "full mesh",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "Full-mesh is a network topology in which there is a direct link between all pairs of nodes. Below is an example of full-mesh topology.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 680
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.78",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "What is a feature of WPA?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "802.1x authentication",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "preshared key",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "TKIP/MIC encryption",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "small Wi-Fi application",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "WPA uses Michael, a special MIC designed to help with TKIP without requiring excessive computation. WPA supports two authentication modes:\n– Personal\n– Enterprise With personal mode, we use a pre-shared key. The pre-shared key is not used directly over the air. Instead, wireless clients and the AP use a four-way handshake that uses the pre-shared key as input to generate encryption keys. Enterprise mode uses 802.1X and an authentication server, usually a RADIUS server. Therefore in this question, TKIP/MIC encryption is the best choice.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [
+        "https://www.sciencedirect.com/topics/engineering/temporal-key-integrity-protocol"
+      ],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 681
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.79",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. R1 has taken the DROTHER role in the OSPF DR/BDR election process. Which configuration must an engineer implement so that R1 is elected as the DR?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "R1(config)#interface FastEthernet0/0\nR1(config-if)#ip ospf priority 1\nR1#clear ip ospf process",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "R1(config)#interface FastEthernet0/0\nR1(config-if)#ip ospf priority 200\nR1#clear ip ospf process",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "R3(config)#interface FastEthernet0/1\nR3(config-if)#ip ospf priority 200\nR3#clear ip ospf process",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "R2(config)#interface FastEthernet0/2\nR2(config-if)#ip ospf priority 1\nR2#clear ip ospf process",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "From the exhibit we learned that both the priorities of R2 and R3 are 1 so if we set a higher value for R1 on this segment (interface f0/0) and reset the OSPF process than R1 will take the DR role.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 682
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.81",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. Which type of configuration is represented in the output?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "Chef",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "JSON",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "Ansible",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "Puppet",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "Puppet resource declarations have the following syntax: Where:\n<TYPE>: is one of the numerous resource types, e.g., file\n<TITLE>: A arbitrary unique resource identifier across all resources of the same type (across all resources applied to a particular system)\n<ATTRIBUTE>: Resource type-specific parameters",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 683
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.82",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "How does TFTP operate in a network?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "relies on the well-known TCP port 20 to transmit data",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "requires two separate connections for control and data traffic",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "uses block numbers to identify and mitigate data-transfer errors",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "provides secure data transfer",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "TFTP is a simple protocol for transferring files, implemented on top of the UDP/IP protocols using well-known port number 69. Each file block has an identification number so that ACK messages from target devices can correctly report back to sending devices if a block is received successfully.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [
+        "https://www.ipswitch.com/blog/what-is-tftp-trivial-file-transfer-protocol"
+      ],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 684
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.84",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. What is represented by “R1” and “SW1” within the JSON output?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "array",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "object",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "value",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "key",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "In this JSON output, “Routers” and “Switches” are keys while “R1”, “R2”, “R3”, “SW1”, “SW2”, “SW3” are values.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 685
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.85",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. The following must be considered + SW1 is fully configured for all traffic\n+ The SW4 and SW9 links to SW1 have been configured\n+ The SW4 interface Gi0/1 and Gi0/0 on SW9 have been configured\n+ The remaining switches have had all VLANs added to their VLAN database Which configuration establishes a successful ping from PC2 to PC7 without interruption to traffic flow between other PCs?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "Option A",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "Option B",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "Option C",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "Option D",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "Option B is not correct as either the link between SW4 & SW11 or the link between SW9 & SW11 must allow VLAN 108. But Gi0/2 of SW4 and Gi0/2 of SW9 only allow VLAN 14 -> PC3 cannot reach PC9 in VLAN 108. Option C is not correct as Gi0/2 of SW4 and Gi0/1 of SW11 only allows VLAN 14 -> PC3 cannot reach PC9 in VLAN 108. Option D has configured Gi0/0 of SW11 but there is no such interface in the topology. Also with option D interface Gi0/2 of SW4 and Gi0/2 of SW9 only allow VLAN 14 -> PC3 cannot reach PC9 in VLAN 108.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 686
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.86",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "An engineer is configuring switch SW1 to act as an NTP server when all upstream NTP server connectivity fails. Which configuration must be used?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "SW1# config t\nSW1(config)#ntp server 192.168.1.1\nSW1(config)#ntp access-group server accesslist1",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "SW1# config t\nSW1(config)3 ntp peer 192.168.1.1\nSW1(config)#ntp access-group peer accesslist1",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "SW1# config t\nSW1(config)#ntp backup\nSW1(config)#ntp server 192.168.1.1",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "SW1# config t\nSW1(config)#ntp master\nSW1(config)#ntp server 192.168.1.1",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 687
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.87",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. An OSPF neighbor relationship must be configured using these guidelines:\n– R1 is only permitted to establish a neighbor with R2.\n– R1 will never participate in DR elections.\n– R1 will use a router-id of 10.1.1.1. Which configuration must be used?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "Option A",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "Option B",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "Option C",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "Option D",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "R1 will never participate in DR elections -> Set the OSPF priority to 0 (“ip ospf priority 0”) can prevent R1 from participate in DR elections -> Only Option B & Option C are correct. OSPF is protocol 89 so we must permit it from 10.100.1.2 while blocking from others -> Only Option B is correct.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 688
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.88",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "How does authentication differ from authorization?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "Authentication verifies the identity of a person accessing a network, and authorization determines what resource a user can access.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "Authentication is used to determine what resources a user is allowed to access, and authorization is used to track what equipment is allowed access to the network",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "Authentication is used to verify a person’s identity, and authorization is used to create syslog messages for logins",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "Authentication is used to record what resource a user accesses, and authorization is used to determine what resources a user can access",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 689
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.89",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "A user configured OSPF and advertised the Gigabit Ethernet interface in OSPF. By default, to which type of OSPF network does this interface belong?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "point-to-multipoint",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "point-to-point",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "nonbroadcast",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "broadcast",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 690
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.90",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. ip arp inspection vlan 5-10 interface fastethernet0/1 switchport mode access switchport access vlan 5 What is the effect of this configuration?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "Egress traffic is passed only if the destination is a DHCP server.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "All ingress and egress traffic is dropped because the interface is untrusted.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "All ARP packets are dropped by the switch.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "The switch discards all ingress ARP traffic with invalid MAC-to-IP address bindings.",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "Dynamic ARP inspection is an ingress security feature; it does not perform any egress checking.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 691
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.91",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. Which prefix did router R1 learn from internal EIGRP?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "192.168.2.0/24",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "192.168.1.0/24",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "192.168.3.0/24",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "172.16.1.0/24",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "Internal EIGRP is symbolized by letter “D”. “EX” means external routes redistributed into EIGRP. Note: “E1” and “E2” are external OSPF routes.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 692
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.92",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. Router R1 must be configured to reach the 10.0.3.0 network from the 10.0.1.0/24 segment. Which command must be used to configure the route?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "route add 10.0.3.0 0.255.255.255 10.0.4.2",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "route add 10.0.3.0 mask 255.255.255.0 10.0.4.3",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "ip route 10.0.3.0 0.255.255.255 10.0.4.2",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "ip route 10.0.3.0 255.255.255.0 10.0.4.3",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 693
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.93",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "What is a benefit for external users who consume public cloud resources?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "implemented over a dedicated WAN",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "located in the same data center as the users",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "all hosted on physical servers",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "accessed over the Internet",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 694
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.94",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "In an SDN architecture, which function of a network node is centralized on a controller?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "provides protocol access for remote access devices",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "discards a message due filtering",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "creates the IP routing table",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "makes a routing decision",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "The Open Networking Foundation identifies three main parts of the Software-defined networking (SDN): Application layer; Control layer and Infrastructure layer. SDN separates a router’s control plane from the data (forwarding) plane. The control plane makes routing decisions. The data plane forwards data (packets) through the router. With SDN routing, decisions are made remotely instead of on each individual router.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 695
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.96",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Which SDN plane forwards user-generated traffic?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "policy plane",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "management plane",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "data plane",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "control plane",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 696
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.97",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "When should an engineer implement a collapsed-core architecture?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "for large networks that are connected to multiple remote sites",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "the access and distribution layers must be on the same device",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "only when using VSS technology",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "for small networks with minimal need for growth",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "The three-tier hierarchical design maximizes performance, network availability, and the ability to scale the network design. Most small enterprise campus’ do not grow significantly larger over time, and most small enterprise campus are small enough to be well served by a two-tier hierarchical design, where the core and distribution layers are collapsed into one layer. The primary motivation for the collapsed core design is reducing network cost, while maintaining most of the benefits of the three-tier hierarchical model.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [
+        "https://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/Small_Enterprise_Design_Profile/SEDP/chap2.html"
+      ],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 697
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.98",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. Routers R1 and R2 have been configured with their respective LAN interfaces. The two circuits are operational and reachable across WAN. Which command set establishes failover redundancy if the primary circuit goes down?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "R1(config)#ip route 0.0.0.0 0.0.0.0 10.10.10.6 2\nR2(config)#ip route 0.0.0.0 0.0.0.0 10.10.10.5 2",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "R1(config)#ip route 10.10.13.10 255.255.255.255 10.10.10.6\nR2(config)#ip route 192.166.0.100 255.255.255.255 10.10.10.5",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "R1(config)#ip route 10.10.13.10 255.255.255.255 10.10.10.2\nR2(config)#ip route 192.168.0.100 255.255.255.255 10.10.10.1",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "R1(config)#ip route 0.0.0.0 0.0.0.0 10.10.10.6\nR2(config)#ip route 0.0.0.0 0.0.0.0 10.10.10.5",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 698
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.100",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "What is a function performed by a web server?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "provide an application that is transmitted over HTTP",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "send and retrieve email from client devices",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "securely store files for FTP access",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "authenticate and authorize a user’s identity",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 699
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.102",
+      "type": "multiple",
+      "requiredAnswerCount": 2,
+      "questionEnglish": "Which two wireless security standards use Counter Mode Cipher Block Chaining Message Authentication Code Protocol for encryption and data integrity? (Choose two)",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "WPA2",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "WPA3",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "WEP",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "WPA",
+          "textVietnamese": ""
+        },
+        {
+          "id": "E",
+          "textEnglish": "Wi-Fi 6",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "B"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "WPA2 mandates the use of a new protocol, counter mode with cipher-block chaining message authentication protocol (CCMP). CCMP uses the AES block cipher, replacing the RC4 cipher used in wired equivalent privacy (WEP) and temporal key integrity protocol (TKIP). CCMP is a security protocol. It follows carefully designed steps that include the use of the AES specified algorithm to encrypt sensitive data. CCMP-128 (AES-128 in CCM mode) is used as the minimum encryption algorithm in WPA3-Personal mode.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "E": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 700
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.103",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "What is a practice that protects a network from VLAN hopping attacks?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "Implement port security on internet-facing VLANs.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "Configure an ACL to prevent traffic from changing VLANs.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "Assign all access ports to VLANs other than the native VLAN.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "Enable dynamic ARP inspection.",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "VLAN Hopping: By altering the VLAN ID on packets encapsulated for trunking, an attacking device can send or receive packets on various VLANs, bypassing Layer 3 security measures. VLAN hopping can be accomplished by switch spoofing or double tagging. One of a popular type of VLAN Hopping is Double-Tagging attack: In this attack, the attacking computer generates frames with two 802.1Q tags. The first tag matches the native VLAN of the trunk port (VLAN 10 in this case), and the second matches the VLAN of a host it wants to attack (VLAN 20). When the packet from the attacker reaches Switch A, Switch A only sees the first VLAN 10 and it matches with its native VLAN 10 so this VLAN tag is removed. Switch A forwards the frame out all links with the same native VLAN 10. Switch B receives the frame with an tag of VLAN 20 so it removes this tag and forwards out to the Victim computer. Note: This attack only works if the trunk (between two switches) has the same native VLAN as the attacker. In other words, this attack is only successful if the attacker belongs to the native VLAN of the trunk link. Another important point is, this attack is strictly one way as it is impossible to encapsulate the return packet. To mitigate this type of attack, we can use VLAN access control lists (VACLs, which applies to all traffic within a VLAN. We can use VACL to drop attacker traffic to specific victims/servers); or implement Private VLANs; or keep the native VLAN of all trunk ports different from user VLANs.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 701
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.104",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. R1#show ip route Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2 E1 - OSPF external type 1, E2 - OSPF external type 2 i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2 ia - IS-IS inter area, * - candidate default, U - per-user static route o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP + - replicated route, % - next hop override Gateway of last resort is 10.56.0.1 to network 0.0.0.0 S*\t0.0.0.0/0 [1/0] via 10.56.0.1 10.0.0.0/8 is variably subnetted, 2 subnets, 2 masks C\t  10.56.0.0/17 is directly connected, Vlan56 L\t  10.56.0.19/32 is directly connected, Vlan56 C\t  10.56.128.0/18 is directly connected, Vlan57 L\t  10.56.128.19/32 is directly connected, Vlan57 When router R1 is sending traffic to IP address 10.56.192.1, which interface or next hop address does it use to route the packet?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "0.0.0.0/0",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "Vlan57",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "10.56.0.1",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "10.56.128.19",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "First we check to see if 10.56.192.1 falls into 10.56.128.0/18 or 10.56.0.0/17 subnets: 10.56.128.0/18 (Increment: 64)\nNetwork address: 10.56.128.0\nBroadcast address: 10.56.191.255 10.56.0.0/17 (Increment: 128)\nNetwork address: 10.56.0.0\nBroadcast address: 10.56.127.255 As we can see 10.56.192.1 does not belong to above subnets or any other subnets in R1 routing table so R1 will use the default route to forward the packets. This question asks “which interface or next hop address” so the answer is the default route uses the next hop of 10.56.0.1.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 702
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.105",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "What is a function of MAC learning on a switch?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "A static MAC address is manually added to the MAC table.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "MAC address learning is disabled by default on all VLANs.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "Frames received for a destination MAC address not listed in the address table are dropped.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "The MAC address table is used to populate the ARP table.",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "MAC address learning is enabled by default on all VLANs -> Answer B is not correct. If a destination MAC address is unknown then the switch will broadcast the frame out all ports except the port where the frame is received -> Answer C is not correct. The ARP table is built from the replies to the ARP requests, recorded before a packet is sent on the network ->Answer D is not correct. We can use the “mac address-table static 001d.a18b.36d0 vlan 5 interface fastEthernet 0/2” for example to manually add a MAC address into the MAC table.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 703
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.106",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "What is the difference between 1000BASE-LX/LH and 1000BASE-ZX interfaces?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "1000BASE-LX/LH interoperates with multimode and single-mode fiber, and 1000BASE-ZX needs a conditioning patch cable with a multimode.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "1000BASE-ZX is supported on links up to 1000km, and 1000BASE-LX/LH operates over links up to 70 km.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "1000BASE-ZX interoperates with dual-rate 100M/1G 10Km SFP over multimode fiber, and 1000BASE-LX/LH supports only single-rate.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "1000BASE-LX/LH is supported on links up to 10km, and 1000BASE-ZX operates over links up to 70 km.",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "D"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "Below lists the cabling standards mentioned above Note: + MM: Multimode\n+ SM: Single-mode Although above list says the maximum length of 1000BASE-ZX is 100km but in practical it is usually from 70 to 80 km depending on link loss.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": true,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 704
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.107",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "What is the effect when loopback interfaces and the configured router ID are absent during the OSPF Process configuration?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "The router ID 0.0.0.0 is selected and placed in the OSPF process.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "No router ID is set, and the OSPF protocol does not run.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "The highest up/up physical interface IP address is selected as the router ID.",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "The lowest IP address is incremented by 1 and selected as the router ID.",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "OSPF uses the following criteria to select the router ID:\n1. Manual configuration of the router ID (via the “router-id x.x.x.x” command under OSPF router configuration mode).\n2. Highest IP address on a loopback interface.\n3. Highest IP address on a non-loopback and active (no shutdown) interface.",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 705
+    },
+    {
+      "sourceFile": "CCNA_Part9.docx",
+      "sourceQuestionNumber": "9.108",
+      "type": "single",
+      "requiredAnswerCount": 1,
+      "questionEnglish": "Refer to the exhibit. What is expected when PC_A sends data to PC_B after their initial communication?",
+      "questionVietnamese": "",
+      "options": [
+        {
+          "id": "A",
+          "textEnglish": "The source and destination MAC addresses remain the same",
+          "textVietnamese": ""
+        },
+        {
+          "id": "B",
+          "textEnglish": "The switch rewrites the source and destination MAC addresses with its own",
+          "textVietnamese": ""
+        },
+        {
+          "id": "C",
+          "textEnglish": "The source MAC address is changed",
+          "textVietnamese": ""
+        },
+        {
+          "id": "D",
+          "textEnglish": "The destination MAC address is replaced with ffff.ffff.ffff",
+          "textVietnamese": ""
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "explanationVietnamese": "",
+      "explanationEnglish": "",
+      "optionExplanationsVietnamese": {
+        "A": {
+          "isCorrect": true,
+          "explanation": ""
+        },
+        "B": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "C": {
+          "isCorrect": false,
+          "explanation": ""
+        },
+        "D": {
+          "isCorrect": false,
+          "explanation": ""
+        }
+      },
+      "references": [],
+      "reviewStatus": "clean",
+      "reviewReasons": [],
+      "sourceFormat": "ccna-docx",
+      "id": 706
+    }
+  ]
+}
